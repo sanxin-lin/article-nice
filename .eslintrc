@@ -1,0 +1,44 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier", "react", "simple-import-sort"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-useless-escape": "off",
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [
+          ["react", "^react-router$", "^antd$", "^echarts$"],
+          [".*\\.tsx$"],
+          [".*/assets/.*", "^@/assets$"],
+          [".*/config/.*", "^@/config$"],
+          [".*/hooks/.*", "^@/hooks$"],
+          [".*/plugins/.*", "^@/plugins$"],
+          [".*/router/.*", "^@/router$"],
+          ["^@/services$", "^@/services/.*"],
+          [".*/store/.*", "^@/store$"],
+          [".*/utils/.*", "^@/utils$"],
+          ["^"],
+          ["^type "],
+        ],
+      },
+    ],
+    "simple-import-sort/exports": "error",
+    "import/no-duplicates": "error", // 合并同一个导入。ide自动导入，会导致impoprt {a} from "A"和impoprt {a1} from "A"导入2次
+    "import/first": "error", // 确保所有导入位于文件的顶部
+    "import/newline-after-import": "error", // 确保在导入后有换行符
+  },
+}
