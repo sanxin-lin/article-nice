@@ -1,10 +1,10 @@
 import { type RouteObject } from 'react-router-dom';
-import Main from '@/views/Main';
+import ArticleEditor from '@/views/ArticleEditor';
 
 const routes: RouteObject[] = [
   {
     path: '/',
-    element: <Main />,
+    element: <ArticleEditor />,
   },
 ];
 

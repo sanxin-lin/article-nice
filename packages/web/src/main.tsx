@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import App from './App.tsx';
 import ReactDOM from 'react-dom/client';
 import './index.less';
@@ -9,11 +9,11 @@ import { BrowserRouter } from 'react-router-dom';
 import '@/locale';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <ConfigProvider locale={zhCN}>
-        <App />
-      </ConfigProvider>
-    </BrowserRouter>
-  </React.StrictMode>,
+  // <React.StrictMode>
+  <BrowserRouter>
+    <ConfigProvider locale={zhCN}>
+      <App />
+    </ConfigProvider>
+  </BrowserRouter>,
+  // </React.StrictMode>,
 );
