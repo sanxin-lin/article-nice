@@ -1,5 +1,29 @@
 {
     "welcome": "欢迎使用React",
     "hello": "你好",
-    "add": "新增文章"
+    "add": "新增",
+    "file": "文件",
+    "format": "格式",
+    "function": "功能",
+    "review": "查看",
+    "theme": "主题",
+    "settings": "设置",
+    "help": "帮助",
+    "tutorial": "教程",
+    "article": {
+        "add": "新增文章",
+        "copy": "复制标题",
+        "edit": "修改标题",
+        "review": "查看文章",
+        "cancel": "取消发布",
+        "saveAsTheme": "保存为主题",
+        "delete": "删除文章",
+        "title": {
+            "label": "文章标题",
+            "placeholder": "请输入标题",
+            "warning": "标题为空，请输入标题",
+            "success": "新增文章成功",
+            "error": "新增文章失败"
+        }
+    }
 }

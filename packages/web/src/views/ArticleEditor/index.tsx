@@ -1,6 +1,7 @@
 import useArticleStore from '@/stores/article';
 
 import Sider from './components/Sider';
+import Main from './components/Main';
 import './index.less';
 import useMount from '@/hooks/useMount';
 
@@ -17,6 +18,7 @@ export default function Index() {
   return (
     <div className="flex w-full h-full main-container">
       <Sider />
+      <Main />
     </div>
   );
 }
