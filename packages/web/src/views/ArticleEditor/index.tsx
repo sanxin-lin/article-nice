@@ -16,7 +16,7 @@ export default function Index() {
   });
 
   return (
-    <div className="flex w-full h-full main-container">
+    <div className="flex w-full h-full editor-container">
       <Sider />
       <Main />
     </div>
